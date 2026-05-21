@@ -11,13 +11,13 @@ namespace AetherArk.Aether.Core.Entity
             m_entities = new HashSet<EntityUID>();
         }
 
-        public int generateUID(Entity owner) {
+        public EntityUID generateUID(Entity owner) {
             lastUID++;
             return new EntityUID(lastUID, owner);
         }
 
         public bool registerEntity(Entity entity) {
-            m_entities.Add(entity.uid)
+            return m_entities.Add(entity.uid);
         }
     }
 }

@@ -1,3 +1,5 @@
+using AetherArk.Aether.Core.Entity;
+
 namespace AetherArk.Aether.Core
 {
     public class ManagerSystem
@@ -16,6 +18,8 @@ namespace AetherArk.Aether.Core
             {
                 instance = new ManagerSystem();
             }
+
+            return instance;
         }
     }
 }
